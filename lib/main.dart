@@ -38,10 +38,11 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SingleChildScrollView(
-        child: Container(margin: const EdgeInsets.all(16),width: double.maxFinite,child: Column(
+        child: Container(margin: const EdgeInsets.all(32),width: double.maxFinite,child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-              Text(widget.equation.equation),
+            const SizedBox(height: 8),
+            Text(widget.equation.equation),
               ElevatedButton(onPressed: () {
                 setState(() {
                   widget.equation = widget.repository.getExample();

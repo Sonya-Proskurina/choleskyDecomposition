@@ -88,7 +88,7 @@ class Equation {
 
     // Матрица иксов, которые нужно будет найти
      X = List.generate(3, (index) => random.nextInt(10)+1);
-     Xtext="|${X[0]}|\n|${X[1]}| = X\n|${X[1]}|\n";
+     Xtext="|${X[0]}|\n|${X[1]}| = X\n|${X[2]}|\n";
 
      //Матрица В
      B = List.generate(3, (index)  {
